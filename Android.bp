@@ -19,8 +19,6 @@ android_app {
     name: "RisingWalls",
     package_name: "org.risingos.wallpaperpicker",
 
-    defaults: ["aapt_version_code_defaults"],
-
     srcs: ["app/src/main/java/**/*.java"],
     resource_dirs: ["app/src/main/res"],
 
