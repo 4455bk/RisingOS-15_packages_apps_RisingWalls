@@ -39,14 +39,14 @@ import java.util.List;
 public class Parser {
 
     public static void parseHomepageManifest(OnParseCompleteCallback callback) {
-        String json = NetworkUtils.getStringFromUrl("https://raw.githubusercontent.com/RisingTechOSS/risingwalls_storage/fourteen/homepage_manifest.json");
+        String json = NetworkUtils.getStringFromUrl("https://raw.githubusercontent.com/RisingOS-Revived/risingwalls_storage/fifteen/homepage_manifest.json");
         HomepageManifest homepageManifest = new Gson().fromJson(json, HomepageManifest.class);
         homepageManifest.notifyParseComplete();
         callback.onParseComplete(homepageManifest);
     }
 
     public static void parseFlatManifest(OnParseCompleteCallback callback, Context context) {
-        String json = NetworkUtils.getStringFromUrl("https://raw.githubusercontent.com/RisingTechOSS/risingwalls_storage/fourteen/flat_manifest.json");
+        String json = NetworkUtils.getStringFromUrl("https://raw.githubusercontent.com/RisingOS-Revived/risingwalls_storage/fifteen/flat_manifest.json");
 
         FlatWallpaperManifest flatWallpaperManifest = new Gson().fromJson(json, FlatWallpaperManifest.class);
 
@@ -65,7 +65,7 @@ public class Parser {
     }
 
     public static void parseDepthManifest(OnParseCompleteCallback callback, Context context) {
-        String json = NetworkUtils.getStringFromUrl("https://raw.githubusercontent.com/RisingTechOSS/risingwalls_storage/fourteen/depth_manifest.json");
+        String json = NetworkUtils.getStringFromUrl("https://raw.githubusercontent.com/RisingOS-Revived/risingwalls_storage/fifteen/depth_manifest.json");
 
         DepthWallpaperManifest depthWallpaperManifest = new Gson().fromJson(json, DepthWallpaperManifest.class);
 
